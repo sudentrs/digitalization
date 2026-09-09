@@ -36,3 +36,6 @@ Thumbs.db
 /scripts/build_supervisor_methods_doc.py
 /scripts/make_supervisor_visual_map.py
 /requirements-reports.txt
+
+# Optional spreadsheet formatting helpers
+/scripts/build_*_workbook.mjs

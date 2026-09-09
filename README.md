@@ -54,7 +54,6 @@ The separately supplied azioni benchmark covers 54 page sides and 3,278 candidat
 
 Review and correction scripts preserve the automatic output alongside correction records. Keep source scans and page-level OCR evidence with any dataset used for analysis. The [data guide](docs/data.md) identifies the saved benchmark files.
 
-The optional JavaScript workbook builders require `@oai/artifact-tool` from the original authoring environment. They are not required for the Python pipeline or CSV review. Report-generation helpers and presentation build sources are not included in this code repository.
 
 ## Sharing
 
