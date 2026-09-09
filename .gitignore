@@ -1,0 +1,38 @@
+# Local environments and editor settings
+.venv/
+venv/
+node_modules/
+.agents/
+.codex/
+.idea/
+.vscode/
+
+# Python and operating-system caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+~$*
+
+# Packaged copies and regenerated presentation previews
+/submission/
+/reports/presentation_build/rendered/
+/reports/presentation_build/detailed_rendered/
+/reports/bocconi_digitization_progress_presentation/
+/reports/bocconi_digitization_detailed_explainer/
+*.pptx.inspect.ndjson
+
+# Research data and documents are shared separately from the code.
+/1950/
+/output/
+/reports/
+/tools/tessdata/
+/*.pdf
+/*.docx
+
+# Local document-generation helpers; not part of the OCR pipeline.
+/scripts/build_followup_ocr_report.py
+/scripts/build_supervisor_methods_doc.py
+/scripts/make_supervisor_visual_map.py
+/requirements-reports.txt
