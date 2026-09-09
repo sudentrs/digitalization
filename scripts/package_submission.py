@@ -7,8 +7,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {
-    ".git", ".agents", ".codex", ".venv", "venv", "node_modules",
-    "__pycache__", ".pytest_cache", ".idea", ".vscode", "submission",
+    "venv", "node_modules", "__pycache__", "submission",
 }
 # The submission uses the final PDF; earlier reports stay in the repository.
 EXCLUDED_PATHS = {"reports"}
@@ -26,6 +25,7 @@ def submission_files():
         folders[:] = sorted(
             name for name in folders
             if name not in EXCLUDED_DIRS
+            and not name.startswith(".")
             and (parent / name).relative_to(ROOT).as_posix() not in EXCLUDED_PATHS
             and not (parent / name).is_symlink()
         )

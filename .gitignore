@@ -1,11 +1,8 @@
 # Local environments and editor settings
-.venv/
+# Hidden local configuration and environment folders
+.*/
 venv/
 node_modules/
-.agents/
-.codex/
-.idea/
-.vscode/
 
 # Python and operating-system caches
 __pycache__/
